@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TimusFlow</title>
+    <link href="src/style.css" rel="stylesheet" />
+  </head>
+  <body class="bg-slate-50">
+    <header
+      class="app-header w-screen p-4 bg-slate-100 flex flex-col items-center"
+    >
+      <h1 class="app-header-title text-3xl text-slate-900">Timus Flow</h1>
+      <p class="app-header-slogan text-slate-600">Design time efficiently</p>
+    </header>
+
+    <main class="w-full flex justify-center px-6 mt-8">
+      <section
+        class="w-full max-w-[780px] px-8 bg-white border border-slate-200 rounded-xl shadow-sm"
+      >
+        <div class="section-header pt-6 pb-3">
+          <header class="mb-1">
+            <h2 class="text-2xl font-semibold text-slate-900">Time Tracker</h2>
+          </header>
+        </div>
+
+        <div class="duration-section w-full">
+          <div class="duration-title mb-3">
+            <label class="text-md text-slate-700 font-medium">
+              Duration
+              <span class="text-sm text-slate-500">(Pomodoro Technique)</span>
+            </label>
+          </div>
+
+          <div class="duration-options grid grid-cols-2 gap-3">
+            <button
+              class="duration-option px-6 py-4 text-left border-2 cursor-pointer rounded-lg border-orange-400 text-white bg-orange-500 "
+              data-duration="25"
+            >
+              <div class="text-2xl font-bold">25 min</div>
+              <div class="text-xs">Classic Pomodoro</div>
+            </button>
+            <button
+              class="duration-option px-6 py-4 text-left border-2 cursor-pointer rounded-lg border-slate-400 bg-slate-100 text-slate-800 hover:bg-slate-200"
+              data-duration="45"
+            >
+              <div class="text-2xl font-bold">45 min</div>
+              <div class="text-xs">Extended Focus</div>
+            </button>
+          </div>
+        </div>
+        
+      </section>
+    </main>
+  </body>
+</html>
