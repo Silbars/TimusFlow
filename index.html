@@ -16,7 +16,7 @@
 
     <main class="w-full flex justify-center px-6 mt-8">
       <section
-        class="w-full max-w-[780px] px-8 bg-white border border-slate-200 rounded-xl shadow-sm"
+        class=" timer-card w-full max-w-[780px] px-8 bg-white border border-slate-200 rounded-xl shadow-sm"
       >
         <div class="section-header pt-6 pb-3">
           <header class="mb-1">
@@ -56,10 +56,16 @@
             <span class="text-xs text-slate-500">(Optional)</span>
           </label>
           <div>
-            <select class="w-full px-3 py-3 my-2 text-slate-700 border border-slate-400 font-medium rounded-xl cursor-pointer">
+            <select class="w-full px-3 py-3 my-2 text-slate-700 border border-slate-400 font-medium rounded-lg cursor-pointer">
               <option>No task (general purpose)</option>
             </select>
           </div>
+        </div>
+
+        <div class="start-btn mt-10 mb-4">
+          <button class="py-3 w-full bg-orange-500 rounded-lg cursor-pointer">
+            <div class="text-xl font-medium text-white">Start Session</div>
+          </button>
         </div>
 
       </section>
