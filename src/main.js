@@ -1,3 +1,4 @@
+import "./style.css"
 let state = "idle";
 let selectedDuration = 25;
 let remainingTime = 0;
