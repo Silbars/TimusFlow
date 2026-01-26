@@ -56,7 +56,6 @@ git push origin main
 - `public/` — static assets
 - `src/` — source files
 	- `main.js`
-	- `timer.js`
 	- `style.css`
 
 **Useful npm scripts (expected)**
