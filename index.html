@@ -15,7 +15,7 @@
 
     <main class="w-full flex justify-center px-6 mt-8">
       <section
-        class=" timer-card w-full max-w-[780px] px-8 bg-white border border-slate-200 rounded-2xl shadow-sm"
+        class="timer-card w-full max-w-[780px] px-8 bg-white border border-slate-200 rounded-2xl shadow-sm"
       >
         <div class="section-header pt-6 pb-3">
           <header class="mb-1">
@@ -33,7 +33,7 @@
 
           <div class="duration-options grid grid-cols-2 gap-3">
             <button
-              class="duration-option px-6 py-4 text-left border-2 cursor-pointer rounded-xl border-orange-400 text-white bg-orange-500 "
+              class="duration-option px-6 py-4 text-left border-2 cursor-pointer rounded-xl border-orange-400 text-white bg-orange-500"
               data-duration="25"
               id="btn1"
             >
@@ -57,7 +57,9 @@
             <span class="text-xs text-slate-500">(Optional)</span>
           </label>
           <div>
-            <select class="w-full px-3 py-3 my-2 text-slate-700 border border-slate-400 font-medium rounded-xl cursor-pointer">
+            <select
+              class="w-full px-3 py-3 my-2 text-slate-700 border border-slate-400 font-medium rounded-xl cursor-pointer"
+            >
               <option>No task (general purpose)</option>
             </select>
           </div>
@@ -69,6 +71,27 @@
           </button>
         </div>
 
+        <div class="tasks-section mt-10 mb-6 border-t pt-6">
+          <div class="flex items-center justify-between mb-3">
+            <h3 class="text-lg font-semibold text-slate-800">Tasks</h3>
+            <span class="task-count text-sm text-slate-500">0 / 0</span>
+          </div>
+
+          <div class="task-list space-y-2 mb-3"></div>
+
+          <div class="flex gap-2">
+            <input
+              type="text"
+              placeholder="Add a task"
+              class="task-input flex-1 px-3 py-2 border border-slate-300 rounded-lg"
+            />
+            <button
+              class="add-task-btn px-4 py-2 bg-slate-800 text-white rounded-lg"
+            >
+              Add
+            </button>
+          </div>
+        </div>
       </section>
     </main>
     <script type="module" src="./src/main.js"></script>
